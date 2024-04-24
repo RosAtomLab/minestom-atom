@@ -10,7 +10,7 @@ plugins {
 }
 
 // Read env vars (used for publishing generally)
-version = System.getenv("MINESTOM_VERSION") ?: "dev"
+version = System.getenv("MINESTOM_VERSION") ?: "atom"
 val channel = System.getenv("MINESTOM_CHANNEL") ?: "local" // local, snapshot, release
 
 val shortDescription = "1.20.4 Lightweight Minecraft server"
@@ -85,8 +85,8 @@ dependencies {
     implementation(libs.jcTools)
 
     // Testing
-    testImplementation(libs.bundles.junit)
-    testImplementation(project(":testing"))
+    //testImplementation(libs.bundles.junit)
+    //testImplementation(project(":testing"))
 }
 
 tasks {

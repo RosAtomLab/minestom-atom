@@ -189,6 +189,7 @@ public class LivingEntity extends Entity implements EquipmentHandler {
             setOnFire(false);
         }
 
+        /*
         // Items picking
         if (canPickupItem() && itemPickupCooldown.isReady(time)) {
             itemPickupCooldown.refreshLastUpdate(time);
@@ -207,6 +208,7 @@ public class LivingEntity extends Entity implements EquipmentHandler {
                         }
                     });
         }
+         */
     }
 
     /**
